@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stocktracker/Screens/view_update.dart';
 import 'package:stocktracker/reusable_card.dart';
 import 'package:stocktracker/constants.dart';
-import 'view_update.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -51,12 +49,7 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     ReusableCard(
-                      onPress: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return ViewUpdate();
-                        }));
-                      },
+                      onPress: () {},
                       colour: Color(0xFF2B2929),
                       cardChild: Padding(
                         padding: EdgeInsets.all(30),
